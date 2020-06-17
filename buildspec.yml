@@ -2,11 +2,11 @@ version: 0.2
 
 phases:
   build:
-    commands:
-	  - echo Build started on 'date'
-	  - dotnet publish -o ./build_output ./ASPNetCoreDemo/ASPNetCoreDemo.csproj
+   commands:
+    - echo Build started on 'date'
+    - dotnet publish -o ./build_output ./ASPNetCoreDemo/ASPNetCoreDemo.csproj
 artifacts:
   files:
     - build_output/**/*
-	- appspec.yml
+    - appspec.yml
   name: WebDemo
