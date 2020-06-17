@@ -5,7 +5,7 @@ phases:
    commands:
     - echo Build started on `date`
     - echo $CODEBUILD_SRC_DIR
-    - dotnet publish -o ./build_output ./ASPNetCoreDemo/ASPNetCoreDemo.csproj
+    - dotnet publish -o ./build_output ./ASPNetCoreDemo/ASPNetCoreDemo/ASPNetCoreDemo.csproj
 artifacts:
   files:
     - build_output/**/*
