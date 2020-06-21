@@ -1,14 +1,15 @@
-MyEC2Instance:
-  Type: AWS::EC2::Instance
-  Properties: 
-    AvailabilityZone: us-east-2a
-    ImageId: ami-0e84e211558a022c0
-    InstanceType: t2.micro
-    KeyName: deploymac
-    SecurityGroups: 
-      - MySG
-    Tags: 
-      - 
-        Key: Name
-        Value: CFNServer
+Resources:
+  EC2Instance:
+    Type: AWS::EC2::Instance
+    Properties: 
+      AvailabilityZone: us-east-2a
+      ImageId: ami-0e84e211558a022c0
+      InstanceType: t2.micro
+      KeyName: deploymac
+      SecurityGroups: 
+         - MySG
+      Tags: 
+         - 
+          Key: Name
+          Value: CFNServer
 
