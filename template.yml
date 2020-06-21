@@ -6,8 +6,4 @@ Resources:
       ImageId: ami-0e84e211558a022c0
       InstanceType: t2.micro
       KeyName: deploymac
-      Tags: 
-        - 
-          Key: Name
-          Value: CFNServer
 
