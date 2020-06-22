@@ -9,6 +9,7 @@ Resources:
       SecurityGroupIds:
         - sg-0732ccb264701420b
       SubnetId: subnet-02d54ed551c722d21
+      IamInstanceProfile: arn:aws:iam::128807365131:role/s3_Admin_Access
       Tags:
         - 
           Key: Name
