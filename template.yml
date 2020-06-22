@@ -1,6 +1,11 @@
 Resources:
   MyEC2Instance:
     Type: AWS::EC2::Instance
+    Metadata: 
+      AWS::CloudFormation::Init: 
+        config: 
+          sources: 
+            C:\temp: "https://s3"
     Properties: 
       AvailabilityZone: us-east-2a
       ImageId: ami-0e84e211558a022c0
@@ -9,7 +14,7 @@ Resources:
       SecurityGroupIds:
         - sg-0732ccb264701420b
       SubnetId: subnet-02d54ed551c722d21
-      IamInstanceProfile: ec2codedeployuser
+      IamInstanceProfile: ec2codedeployuser   
       Tags:
         - 
           Key: Name
