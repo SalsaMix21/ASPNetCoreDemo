@@ -6,9 +6,8 @@ Resources:
       ImageId: ami-0e84e211558a022c0
       InstanceType: t2.micro
       KeyName: deploymac
-      SecurityGroupIDs:
-        - sg-0732ccb264701420b
-      SubnetId: subnet-02d54ed551c722d21
+      SecurityGroups:
+        - MySG
       Tags:
         - 
           Key: Name
