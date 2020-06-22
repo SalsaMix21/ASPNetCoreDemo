@@ -9,12 +9,7 @@ Resources:
       SecurityGroupIds:
         - sg-0732ccb264701420b
       SubnetId: subnet-02d54ed551c722d21
-      iamInstanceProfile:
-        Type: AWS::IAM::InstanceProfile
-        Properties:
-          Path: /
-          Roles:
-            - s3_Admin_Access
+      IamInstanceProfile: ec2codedeployuser
       Tags:
         - 
           Key: Name
