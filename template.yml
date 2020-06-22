@@ -8,6 +8,7 @@ Resources:
       KeyName: deploymac
       SecurityGroupIds:
         - sg-0732ccb264701420b
+      SubnetId: subnet-02d54ed551c722d21
       Tags:
         - 
           Key: Name
