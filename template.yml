@@ -5,12 +5,12 @@ Resources:
       AWS::CloudFormation::Init: 
         config: 
           sources: 
-            C:\temp: "https://s3"
+            C:\temp: "s3://codedeploy-salsman-apetguru/apetgurumod.zip"
     Properties: 
       AvailabilityZone: us-east-2a
-      ImageId: ami-0e84e211558a022c0
+      ImageId: ami-0a83d9223efc49d62
       InstanceType: t2.micro
-      KeyName: deploymac
+      KeyName: codedeployTest
       SecurityGroupIds:
         - sg-0732ccb264701420b
       SubnetId: subnet-02d54ed551c722d21
@@ -18,5 +18,5 @@ Resources:
       Tags:
         - 
           Key: Name
-          Value: MyCFNEC2
+          Value: MyCFNWindowsEC2
 
