@@ -23,6 +23,7 @@ Resources:
         Fn::Base64: |
           - ''
           - - "<script>\n"
-            - 'cfn-init.exe -v -c config -s '
+            - '"C:\Program Files (x86)\Amazon\cfn-bootstrap\cfn-init.exe\" -v -s '
+            - !Ref 'AWS::StackName'
             - "\n"
             - "</script>\n"
