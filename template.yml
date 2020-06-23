@@ -19,11 +19,10 @@ Resources:
         - 
           Key: Name
           Value: MyCFNWindowsEC2
-      UserData: !Base64
-        Fn::Join: |
+      UserData: 
+        Fn::!Base64:
           - ''
           - - "<script>\n"
             - '"C:\Program Files (x86)\Amazon\cfn-bootstrap\cfn-init.exe\" -v -s '
-            - !Ref 'AWS::StackName'
             - "\n"
             - "</script>\n"
