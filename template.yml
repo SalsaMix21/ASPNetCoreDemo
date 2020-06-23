@@ -14,9 +14,15 @@ Resources:
       SecurityGroupIds:
         - sg-0732ccb264701420b
       SubnetId: subnet-02d54ed551c722d21
-      IamInstanceProfile: ec2codedeployuser   
+      IamInstanceProfile: ec2codedeployuser
       Tags:
         - 
           Key: Name
           Value: MyCFNWindowsEC2
-
+      UserData: 
+        Fn::Base64: |
+          - ''
+          - - "<script>\n"
+            - 'cfn-init.exe -v -c config -s '
+            - "\n"
+            - "</script>\n"
