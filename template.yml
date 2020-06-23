@@ -5,7 +5,7 @@ Resources:
       AWS::CloudFormation::Init: 
         config: 
           sources: 
-            C:\temp: "s3://codedeploy-salsman-apetguru/apetgurumod.zip"
+            C:\Temp: "https://codedeploy-salsman-apetguru.s3.us-east-2.amazonaws.com/apetgurumod.zip"
     Properties: 
       AvailabilityZone: us-east-2a
       ImageId: ami-0a83d9223efc49d62
