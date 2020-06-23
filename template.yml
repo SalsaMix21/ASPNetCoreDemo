@@ -20,7 +20,7 @@ Resources:
           Key: Name
           Value: MyCFNWindowsEC2
       UserData: 
-        Fn::!Base64:
+        Fn::Base64:
           - ''
           - - "<script>\n"
             - '"C:\Program Files (x86)\Amazon\cfn-bootstrap\cfn-init.exe\" -v -s '
